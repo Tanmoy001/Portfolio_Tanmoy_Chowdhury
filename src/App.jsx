@@ -9,10 +9,23 @@ import Testimonials from './components/testimonials/Testimonials';
 import Footer from './components/footer/Footer';
 
 const App = ()=>{
+      const setTheme =(color)=>{
+        document.documentElement.style.setProperty('--color-bg',color)
+      }
+      const setColor=(event)=>{
+        console.log("setcolor")
+        const currentcolor = event.target.style.getPropertyValue('color');
+        setTheme(currentcolor)
+        console.log(currentcolor)
+        localStorage.setItem('color',currentcolor);
+      }
+
   return (
     <>
       <Header/>
-      <Nav/>
+      <div className='color-list'>
+      <Nav setColor={setColor}/>
+      </div>
       <About/>
       <Experience/>
       <Services/>
@@ -21,6 +34,7 @@ const App = ()=>{
       <Footer/>
     </>
   )
+
 }
 
 export default App;

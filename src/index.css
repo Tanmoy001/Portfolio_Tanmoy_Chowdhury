@@ -13,7 +13,7 @@
 :root{
   --color-bg:#FCDEBE;
   --color-bg-variant:#775144 ;
-  --color-primary:#4db5ff;
+  --color-primary:#AA336A;
   --color-primary-variant:rgba(77,181,255,0.4);
   --color-white:#001011;
   --color-light:rgba(255,255,255,0.6);
@@ -103,7 +103,7 @@ object-fit: cover;
 }
 
 /*=========== SMALL DEVICES==================*/
-@media screen and(max-width:1024px) {
+@media screen and(max-width:600px) {
   .container{
     width: var(--container-width-ms);
   }
