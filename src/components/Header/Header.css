@@ -1,0 +1,52 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+.header_container{
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+/*========cta========*/
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+
+/*========header__socials=======*/
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2rem;
+    gap: 0.8rem;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    top: 25rem;
+    
+}
+.header__socials::after{
+    
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+.me{
+    background: var(--color-primary);
+    width: 22rem;
+    height: 20rem;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    margin-top: 4rem;
+    border-radius: 20rem 20rem 0 0;
+}
