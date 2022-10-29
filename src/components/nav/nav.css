@@ -52,7 +52,13 @@
     text-align: center;
     transition: 0.5s;
 }
+.contain .navigation ul li a:hover{
 
+    background: lightblue;
+    justify-content: center;
+    display: flex;
+
+}
 
 
 .contain .navigation ul li a .icon .fas{

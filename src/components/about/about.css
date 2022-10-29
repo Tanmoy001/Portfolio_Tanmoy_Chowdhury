@@ -1,0 +1,123 @@
+section{
+    margin-top: 0px;
+}
+.container_about{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card{
+    position: relative;
+    width: 80rem;
+    height: 650px;
+    margin: 10px;
+    display: flex;
+    transition: 0.5s;
+    justify-content: flex-start;
+    align-items: center;
+}
+img{
+    width: 45%;
+}
+.container .card img{
+    position:absolute;
+    bottom: 0;
+   transform: translate(50%);
+    height: 650px;
+
+}
+.container .card .content{
+    position: relative;
+    width: 50%;
+    left: 10%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+}
+.container .card .content p{
+    color: #fff;
+}
+.container .card .content a{
+    position: relative;
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 10px ;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
+.container .card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.container .card .about:hover{
+    width: 100%;
+    padding-bottom: 42%;
+    padding-left: 47%;
+}
+
+
+
+
+#backg{
+    margin-bottom: 129px;
+    margin-left: 42%;
+    width: 417px;
+    height: 308px;
+    border-radius: 90% 0 0 0;
+}
+#backg2{height: 177px;
+    width: 146px;
+    margin-bottom: 53px;
+    margin-left: 84%;
+    transform: rotate(90deg);
+}
+
+.about_content{
+    margin-left: 3rem;
+    margin-right: 60%;
+}
+
+
+
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.about_card{
+    background: lightblue;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.about_card:hover{
+    background: transparent;
+    border-color: #111;
+}
+.about_icon{
+    font-size: 1.4rem;
+}
+.about_card small{
+    font-size: 0.9rem;
+}
+.about_content p{
+    margin: 2rem 0 2.6rem;
+}

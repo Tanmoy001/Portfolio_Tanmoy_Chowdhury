@@ -9,25 +9,24 @@ header{
     height: 100%;
     position: relative;
 }
+.developer{
+    margin-left: 8%;
+    color: black;
+    text-transform: uppercase;
+}
 .text-light{
-    
-    color: #fff;
-    font-size: 1rem;
     text-transform: uppercase;
     position: relative;
-    display: grid;
-    place-items: center;
 }
 
 .text-light::before{
     content:"Frontend";
-    width: 100%;
-    color: #2ed573;
+    color: blue;
     position: absolute;
     top: 0;
-    margin-right: 6.8%;
+    left: 45%;
     border-right: .2rem solid #2ed573;
-    animation: slide .5s ease-in-out infinite;
+    animation: slide 1.5s ease-in-out infinite;
     -webkit-animation: slide 1.8s ease-in-out infinite;
      overflow: hidden;
 }
@@ -36,8 +35,8 @@ header{
     0%{
         width: 0%;
     }
-    60%{
-        width: 7%;
+    50%{
+        width: 5.3%;
     }
     100%{
         width: 0%;
@@ -80,7 +79,7 @@ header{
     left: 50%;
     transform:translateX(-50%);
     margin-top: 2.2rem;
-    border-radius: 20rem 20rem 0 0;
+    border-radius: 10% 10% 0 0;
 }
 #photo{
     height: 21rem;

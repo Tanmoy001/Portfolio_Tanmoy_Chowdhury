@@ -10,7 +10,8 @@ const Header = () => {
       <div className="container header_container">
         <h5>Hello I'm</h5>
         <h1>Tanmoy Chowdhury</h1>
-        <h5 className="text-light">frontend Developer</h5>
+        <h5 className="text-light"></h5>
+        <h5 className='developer'>Developer</h5>
         <CTA/>
         <HeaderSocials/>
           <div className='me'>
@@ -18,7 +19,7 @@ const Header = () => {
             <img src={Me} id="me"alt=''/>
           </div>
       </div>
-      </header>  
+    </header>  
     
   )
 }
