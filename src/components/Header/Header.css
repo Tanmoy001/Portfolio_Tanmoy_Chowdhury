@@ -20,11 +20,12 @@ header{
 }
 
 .text-light::before{
-    content:"Frontend";
+    content:'Frontend';
     color: blue;
     position: absolute;
     top: 0;
-    left: 45%;
+    left: 44%;
+    margin-right: ;
     border-right: .2rem solid #2ed573;
     animation: slide 1.5s ease-in-out infinite;
     -webkit-animation: slide 1.8s ease-in-out infinite;
@@ -36,7 +37,7 @@ header{
         width: 0%;
     }
     50%{
-        width: 5.3%;
+        width: 6%;
     }
     100%{
         width: 0%;

@@ -1,0 +1,46 @@
+section>h5{
+    color: brown;
+}
+section>h2{
+    color: rebeccapurple;
+}
+.experience_container{
+    margin-top: 73px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+.experience_fontend{
+background: lightblue;
+padding: 2.4rem 5rem;
+border-radius: 2rem;
+transition: var(--transition);
+}
+.experience_fontend:hover{
+    background: transparent;
+    border: 1px solid black;
+}
+
+.experience_container .experience_fontend h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+.experience_details{
+    display: flex;
+    gap: 1rem;
+}
+.icon{
+    margin-top: 6px;
+}
+@media only screen and (max-width: 1024px)  {
+    .experience_container{
+        grid-template-columns: 1fr;
+        gap:1rem
+    }
+
+}
