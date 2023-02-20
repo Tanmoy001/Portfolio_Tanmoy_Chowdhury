@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Testimonials from './components/testimonials/Testimonials';
 import Footer from './components/footer/Footer';
 
+
 const App = ()=>{
       const setTheme =(color)=>{
         document.documentElement.style.setProperty('--color-bg',color)
