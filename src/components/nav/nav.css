@@ -3,7 +3,7 @@
    width: max-content;
    display: block;
    padding:0.7rem 1.7rem ;
-   z-index: 2;
+   z-index: 12;
    left: 50%;
    transform: translateX(-50%);
    position: fixed;
@@ -53,8 +53,8 @@
     transition: 0.5s;
 }
 .contain .navigation ul li a:hover{
-
-    background: lightblue;
+    border-radius: 10px;
+    background: rgb(197, 228, 238);
     justify-content: center;
     display: flex;
     width: 70px;
@@ -115,7 +115,7 @@
 
 @media only screen and (max-width: 650px){
     .navbar{
-        bottom: 0.3rem;
+        bottom: 2rem;
     }
 }
 

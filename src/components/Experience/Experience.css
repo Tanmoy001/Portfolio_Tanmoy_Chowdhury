@@ -55,3 +55,8 @@ transition: var(--transition);
     margin-bottom: 2rem;
 }
 }
+@media only screen and (max-width: 330px)  {
+    .experience_fontend {
+        width: 134%;
+    }
+}

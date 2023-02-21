@@ -2,6 +2,8 @@ section {
     margin-top: 43px;
 }
 .protfolio_container{
+    justify-content: center;
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2.5rem;

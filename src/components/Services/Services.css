@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Oswald:400,500,600,700');
+
+#services{
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+#services .container{
+    padding-top: 8rem;
+    position: relative;
+    display: flex;
+    padding: 150px 40px 30px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+#services .container .card{
+    position: relative;
+    width: 350px;
+    height: 180px;
+    background: white;
+    transition: 0.5s;
+    margin-bottom: 3rem;
+}
+#services .container .card:hover{
+    height: 450px;
+}
+#services .container .card .lines{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+#services .container .card .lines::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent,#45f3ff,#45f3ff,#45f3ff,transparent);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+#services .container .card:hover .lines::before{
+    animation-play-state: running;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%)rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%)rotate(360deg);
+    }
+}
+#services .container .card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background: #292929;
+}
+#services .container .card .imgBx{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    background: #000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+#services .container .card:hover .imgBx{
+    top: 25px;
+    width: 226px;
+    height: 223px;
+}
+#services .container .card .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    background: linear-gradient(transparent,#45f3ff,#45f3ff,#45f3ff,transparent);
+    animation: animate2 4s linear infinite;
+    animation-play-state: paused;
+}
+#services .container .card:hover .imgBx::before{
+    animation-play-state: running;
+}
+@keyframes animate2{
+    0%{
+        transform: translate(-50%,-50%)rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%)rotate(0deg);
+    }
+}
+#services .container .card .imgBx::after{
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background: #292929;
+}
+.card .imgBx img{
+    height: 60%;
+    margin-bottom: 2rem;
+    position: absolute;
+    width: 59%;
+    z-index: 1;
+    filter: invert(1);
+   
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.card .imgBx img:hover{
+    margin-bottom: 3rem;
+    opacity: 1;
+}
+#services .container .card .content{
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: -2rem;
+}
+#services .container .card .content .details{
+    padding: 20px 20px;
+    text-align: center;
+    
+    margin-bottom: 15%;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(80px);
+}
+#services .container .card:hover .content .details{
+    margin-bottom: 5%;
+}
+#services .container .card .content .details h2{
+font-size: 1.5em;
+font-weight: 500;
+color: #45f3ff;
+line-height: 1.2em;
+}
+#services .container .card .content .details p{
+color: #fff;
+opacity: 0;
+transform: 0.5s;
+}
+#services .container .card:hover .content {
+    margin-left: 0;
+}
+#services .container .card:hover .content .details p{
+    
+opacity: 1;
+}
+@media only screen and (max-width: 892px)  {
+    .card .imgBx img {
+        height: 74%;
+        width: 72%;
+}
+.card .imgBx img:hover {
+  margin-bottom: 1.5rem;
+}
+}
+@media only screen and (max-width: 461px)  {
+    #services .container .card:hover .imgBx {
+        top: 25px;
+        width: 145px;
+        height: 145px;
+    }
+    .card .imgBx img {
+        margin-bottom: 1rem;
+    }
+    #services .container .card:hover {
+        height: 365px;
+    }
+    #services .container .card:hover .content .details {
+        font-size: small;
+    }
+    #services .container .card .content {
+    margin-left: -1rem;
+    }
+.card:hover .imgBx {
+    top: 25px;
+    width: 185px;
+    height: 182px;
+}
+}
+@media only screen and (max-width: 389px)  {
+
+#services .container .card .imgBx {
+   
+    width: 115px;
+    height: 115px;
+}
+#services .container .card {
+    height: 140px;
+}
+#services .container .card .content .details {
+    margin-bottom: 49%;
+}
+}
