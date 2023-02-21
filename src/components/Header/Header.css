@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 90vh;
     padding-top: 1.2rem;
     overflow: hidden;
 }
@@ -9,8 +9,12 @@ header{
     height: 100%;
     position: relative;
 }
+.text{
+    display: flex;
+   justify-content: center;
+}
 .developer{
-    margin-left: 8%;
+    margin-left: 2%;
     color: black;
     text-transform: uppercase;
 }
@@ -24,7 +28,6 @@ header{
     color: blue;
     position: absolute;
     top: 0;
-    left: 44%;
     margin-right: ;
     border-right: .2rem solid #2ed573;
     animation: slide 1.5s ease-in-out infinite;
@@ -37,7 +40,7 @@ header{
         width: 0%;
     }
     50%{
-        width: 6%;
+        width: 100%;
     }
     100%{
         width: 0%;
@@ -97,6 +100,26 @@ header{
     .header__socials::after{
         display: none;
     }
+    #photo,#me{
+        width: 19rem;
+    }
 
+
+}
+
+@media only screen and (max-width: 386px)  {
+    #photo,#me{  
+        width: 14rem;
+        margin-left: 1%;
+}
+#photo {
+    height: 17rem;
+}
+h1 {
+    font-size: 1.5rem;
+}
+header{
+    height: 87vh;
+}
 
 }

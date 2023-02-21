@@ -13,19 +13,15 @@ section{
     width: 80rem;
     height: 650px;
     margin: 10px;
-    display: flex;
     transition: 0.5s;
     justify-content: flex-start;
     align-items: center;
 }
-img{
-    width: 45%;
-}
 .container .card img{
     position:absolute;
     bottom: 0;
-   transform: translate(50%);
-    height: 650px;
+   transform: translate(37%);
+    height: 605px;
 
 }
 .container .card .content{
@@ -65,35 +61,42 @@ img{
     opacity: 1;
     visibility: visible;
 }
-.container .card .about:hover{
-    width: 100%;
-    padding-bottom: 42%;
-    padding-left: 47%;
+
+.pictures{
+    width: 46rem;
+    height: 37rem;
 }
-
-
-
-
+.pictures img{
+width: 42%;
+}
 #backg{
-    margin-bottom: 129px;
-    margin-left: 42%;
-    width: 417px;
-    height: 308px;
-    border-radius: 90% 0 0 0;
+    /*margin-bottom: 129px;
+    margin-left: 42%;*/
+    margin-left: 8.5rem;
+    margin-bottom: 90px;
+    height: 45%;
+    width: 35%;
+    border-radius: 90% 10% 10% 0;
 }
-#backg2{height: 177px;
-    width: 146px;
-    margin-bottom: 53px;
-    margin-left: 84%;
-    transform: rotate(90deg);
+
+#backg2{
+    width: 78%;
+    height: 95.5%;
 }
 
 .about_content{
-    margin-left: 3rem;
-    margin-right: 60%;
+    margin-top: 173px;
+    margin-right: 24%;
 }
 
-
+#mypic{
+    height: 394px;
+    /* overflow: hidden; */
+    width: 337px;
+    margin-bottom: 90px;
+    margin-left: 27%;
+    border-radius: 0px 0px 129px 0px;
+}
 
 .about_cards{
     display: grid;
@@ -121,3 +124,138 @@ img{
 .about_content p{
     margin: 2rem 0 2.6rem;
 }
+
+@media only screen and (max-width: 1080px){
+    #backg2 {
+        width: 85%;
+    }
+    #mypic {
+        height: 383px;
+    }
+
+}
+
+/*=========== SMALL DEVICES==================*/
+@media only screen and (max-width: 900px){
+    .about_content{
+        margin-top: 0;
+    margin-right: 0;
+        padding: 2rem 5rem;
+    }
+    .container .card{
+        height: 563px;
+    }
+    .container_about{
+    display: block;
+    }
+    .card{
+        width: auto;
+        height: auto;
+    }
+    .container .card{
+        width: auto;
+    }
+    .container .card img{
+        transform: translate(20%);
+    }
+    #backg2 {
+        width: 65%;
+        margin-left: 9rem;
+        height: 108.5%;
+    }
+    #backg {
+        margin-left: 14%;
+        width: 37%;
+        height: 54%;
+    }
+    .pictures{
+        width: 0;
+        height: 0;
+    }
+
+  }
+  @media only screen and (max-width: 781px){
+    #backg2 {
+        width: 67%;
+        margin-left: 3rem;
+        margin-bottom: 6rem;
+        height: 69.5%;
+    }
+    #backg {
+        height: 16rem;
+        margin-left: 18%;
+    }
+    #mypic {
+        height: 359px;
+        border-radius: 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 650px){
+    .container .card {
+        height: 415px;
+    }
+    #backg2 {
+        width: 64%;
+        margin-left: 4rem;
+        margin-bottom: 3rem;
+        height: 84.5%;
+        margin-bottom: 6rem;
+    }
+    #mypic {
+        height: 279px;
+        border-radius: 0px;
+        margin-left: 22%;
+    }
+    #backg {
+        width: 46%;
+        height: 15rem;
+        margin-left: 12%;
+    }
+}
+
+@media only screen and (max-width: 530px){
+
+    #mypic {
+        height: 279px;
+        margin-left: 12%;
+    }
+    #backg {
+        width: 45%;
+        height: 13rem;
+        margin-left: 12%;
+    }
+    #backg2 {
+        width: 64%;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+        height: 86.5%;
+        margin-bottom: 4.7rem;
+  }
+}
+
+
+  @media only screen and (max-width: 450px){
+    #mypic {
+        height: 261px;
+        width: 323px;
+        margin-left: -1%;
+    }
+    #backg {
+        width: 53%;
+        height: 15rem;
+        margin-left: 9%;
+    }
+    #backg2 {
+        width: 96%;
+        margin-left: -4rem;
+        margin-bottom: 3rem;
+        height: 72.5%;
+        margin-bottom: 7.7rem;
+}
+.about_content {
+    margin-top: 0;
+    margin-right: 0;
+    padding: 2rem 2rem;
+}
+  }

@@ -12,7 +12,7 @@ section>h2{
 }
 .experience_fontend{
 background: lightblue;
-padding: 2.4rem 5rem;
+padding: 2.4rem 1rem;
 border-radius: 2rem;
 transition: var(--transition);
 }
@@ -43,4 +43,15 @@ transition: var(--transition);
         gap:1rem
     }
 
+}
+@media only screen and (max-width: 975px)  {
+    
+    .experience_container {
+        margin-top: 73px;
+        display: flow-root;
+
+}
+.experience_fontend {
+    margin-bottom: 2rem;
+}
 }

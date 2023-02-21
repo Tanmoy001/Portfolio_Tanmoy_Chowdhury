@@ -21,31 +21,31 @@ const Nav = ({setColor}) => {
                 <li className="list">
                     <a href="/" id='1'>
                     <span className="icon" onMouseOver={setColor}style={{color: "#FEFAE0"}}>< AiOutlineHome/></span>
-                    <span className="title">Home</span>
+                    
                     </a>
                 </li>
                 <li className="list" >
                     <a href="#about" id='2'>
                     <span className="icon"onMouseOver={setColor}style={{color:"#abd699"}}><BiUserCircle/></span>
-                    <span className="title" >About</span>
+                    
                     </a>
                 </li>
                 <li className="list" >
                     <a href="#experience" id='3'>
                     <span className="icon"onMouseOver={setColor}style={{color:"#05c46b"}}><BiBook/></span>
-                    <span className="title">Experience</span>
+                   
                     </a>
                 </li>
                 <li className="list" >
                     <a href="#services"id='4'>
                     <span className="icon"onMouseOver={setColor}style={{color:"#75c9b7"}}><RiServiceLine/></span>
-                    <span className="title">Services</span>
+                    
                     </a>
                 </li>
                 <li className="list" >
                     <a href="#contact"id='5'>
                     <span className="icon"onMouseOver={setColor}style={{color:"#E8D7FF"}}><BiMessageSquareDetail/></span>
-                    <span className="title">Contact</span>
+                    
                     </a>
                 </li>
                 
