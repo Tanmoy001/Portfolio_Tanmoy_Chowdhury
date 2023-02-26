@@ -1,0 +1,127 @@
+.ContactUs{
+    display: flex;
+    margin-left: 14%;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    background: #03080a;
+}
+.contact_container{
+    width: 80%;
+    padding: 20px;
+}
+.contact_container h2{
+    width: 100%;
+    color: #45f3ff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact_container .row100{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.contact_container .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 44px 0 10px;
+    transition: 0.5s;
+}
+.contact_container .row100 .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #45f3ff;
+}
+.contact_container .row100 .inputBox input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #292929;
+}
+.contact_container .row100 .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.contact_container .row100 .inputBox input:focus + .text,
+.contact_container .row100 .inputBox input:valid + .text
+{
+top: -40px;
+left: -10px;
+}
+.contact_container .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #45f3ff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.contact_container .row100 .inputBox input:focus ~ .line,
+.contact_container .row100 .inputBox input:valid ~ .line{
+height: 100%;
+
+}
+.contact_container .row100 .inputBox .textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+.contact_container .row100 .inputBox .textarea textarea{
+    height: 100%;
+    resize: none;
+}
+.contact_container .row100 .inputBox textarea:focus + .text,
+.contact_container .row100 .inputBox textarea:valid + .text
+{
+top: -35px;
+left: -10px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #45f3ff;
+    color: #292929;
+    font-size: 18px;
+    border-radius: 2px;
+}
+.submit:hover{
+    background: white;
+    border: 1px solid black;
+}
+@media only screen and (max-width: 900px){
+ 
+    .ContactUs {
+        display: flex;
+        margin-left: 0%;
+
+    }
+}
+
+

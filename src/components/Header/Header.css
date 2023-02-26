@@ -28,7 +28,7 @@ header{
     color: blue;
     position: absolute;
     top: 0;
-    margin-right: ;
+    margin-right:0 ;
     border-right: .2rem solid #2ed573;
     animation: slide 1.5s ease-in-out infinite;
     -webkit-animation: slide 1.8s ease-in-out infinite;
@@ -101,7 +101,7 @@ header{
         display: none;
     }
     #photo,#me{
-        width: 19rem;
+        width: 18rem;
     }
 
 

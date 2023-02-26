@@ -1,0 +1,90 @@
+.contact_container {
+    margin-top: 76px;
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    justify-content: center;
+    align-items: center;
+}
+.contact_options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact_option{
+    background: linear-gradient(35deg,lightblue,#7094ce);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border-radius: 1px solid transparent;
+    transition: 0.5s;
+}
+.contact_option:hover{
+    background: transparent;
+    border: 1px solid black;
+}
+.contact_option-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.contact_option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+.contact_option a:hover{
+    color: black;
+}
+
+@media only screen and (max-width: 900px){
+    .contact_container{
+        display: block;
+    }
+    .contact_option{
+        width: 11rem;
+        height: 10rem;
+    }
+    .contact_options {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+   
+}
+@media only screen and (max-width: 570px){
+    .contact_option-icon {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact_option h4{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .contact_option {
+        height: 8.5rem;
+        width: 6rem;
+    }
+    .contact_option a {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 470px){
+    .contact_option-icon {
+        font-size: .9rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact_option h4{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .contact_option {
+        height: 8.5rem;
+        width: 6rem;
+    }
+    .contact_option a {
+        font-size: 8px;
+    }
+}

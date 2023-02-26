@@ -30,7 +30,7 @@ const About = () => {
                 <p>
                   Currently I am serving for the "Creamy Layer" as a frontend developer
                 </p>
-                <a href='#contact' className='btn btn-primary'>Lets talk</a>
+                <a href='#Contact' className='btn btn-primary'>Lets talk</a>
             
          </div>
       

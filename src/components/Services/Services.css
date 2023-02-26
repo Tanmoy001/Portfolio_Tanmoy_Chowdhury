@@ -10,22 +10,22 @@
     padding-top: 8rem;
     position: relative;
     display: flex;
-    padding: 150px 40px 30px 40px;
+    padding: 150px 0px 30px 0px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
 }
 #services .container .card{
     position: relative;
-    width: 350px;
+    width: 250px;
     height: 180px;
     background: white;
     transition: 0.5s;
     margin-bottom: 3rem;
 }
 #services .container .card:hover{
-    height: 450px;
+    height: 408px;
 }
 #services .container .card .lines{
     position: absolute;
@@ -138,14 +138,18 @@
 #services .container .card .content .details{
     padding: 20px 20px;
     text-align: center;
-    
+    margin-top: .8rem;
     margin-bottom: 15%;
     width: 100%;
     transition: 0.5s;
-    transform: translateY(80px);
+    transform: translateY(100px);
+}
+#services .container .card .content .details h1{
+margin-bottom: 1rem;
 }
 #services .container .card:hover .content .details{
     margin-bottom: 5%;
+    height: 35%;
 }
 #services .container .card .content .details h2{
 font-size: 1.5em;
@@ -165,6 +169,7 @@ transform: 0.5s;
     
 opacity: 1;
 }
+
 @media only screen and (max-width: 892px)  {
     .card .imgBx img {
         height: 74%;
@@ -184,13 +189,18 @@ opacity: 1;
         margin-bottom: 1rem;
     }
     #services .container .card:hover {
-        height: 365px;
+        height: 351px;
     }
     #services .container .card:hover .content .details {
         font-size: small;
     }
     #services .container .card .content {
-    margin-left: -1rem;
+   /* margin-left: -1rem;*/
+    }
+    #services .container .card:hover .content .details {
+        
+         margin-bottom: 0%; 
+        height: 43%; 
     }
 .card:hover .imgBx {
     top: 25px;

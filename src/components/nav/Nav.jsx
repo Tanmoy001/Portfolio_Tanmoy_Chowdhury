@@ -43,7 +43,7 @@ const Nav = ({setColor}) => {
                     </a>
                 </li>
                 <li className="list" >
-                    <a href="#contact"id='5'>
+                    <a href="#Contact"id='5'>
                     <span className="icon"onMouseOver={setColor}style={{color:"#E8D7FF"}}><BiMessageSquareDetail/></span>
                     
                     </a>
