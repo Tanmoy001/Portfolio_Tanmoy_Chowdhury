@@ -9,9 +9,9 @@ import { FiTwitter } from 'react-icons/fi';
 const Footer = () => {
   return (
     <footer>
-      <a href='#' className='footer_logo'>Tanmoy Chowdhury</a>
+      <a href='/' className='footer_logo'>Tanmoy Chowdhury</a>
       <ul className='permalinks'>
-        <li><a href='#'>Home</a></li>
+        <li><a href='/'>Home</a></li>
         <li><a href='#anout'>About</a></li>
         <li><a href='#experience'>Experience</a></li>
         <li><a href='#services'>Services</a></li>

@@ -194,9 +194,6 @@ opacity: 1;
     #services .container .card:hover .content .details {
         font-size: small;
     }
-    #services .container .card .content {
-   /* margin-left: -1rem;*/
-    }
     #services .container .card:hover .content .details {
         
          margin-bottom: 0%; 
