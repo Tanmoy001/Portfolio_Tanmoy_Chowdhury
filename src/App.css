@@ -23,7 +23,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.rotateloader{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 .App-link {
   color: #61dafb;
 }
