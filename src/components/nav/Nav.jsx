@@ -19,7 +19,7 @@ const Nav = ({setColor}) => {
         
             <ul>
                 <li className="list">
-                    <a href="/" id='1'>
+                    <a href="#header" id='1'>
                     <span className="icon" onMouseOver={setColor}style={{color: "#FEFAE0"}}>< AiOutlineHome/></span>
                     
                     </a>

@@ -38,6 +38,9 @@
     color: #45f3ff;
 }
 .contact_container .row100 .inputBox input{
+    text-align: start;
+    
+    display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
