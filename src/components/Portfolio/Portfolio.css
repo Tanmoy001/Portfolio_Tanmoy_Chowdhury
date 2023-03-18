@@ -1,67 +1,99 @@
-section {
-    margin-top: 43px;
-}
-.protfolio_container{
+#portfolio{
+    margin-top: 4rem;
     justify-content: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2.5rem;
-    margin-top: 76px;
+    align-items: center;
+    margin-bottom: 4rem;
 }
-.portfolio_item{
-    background: linear-gradient(45deg,lightblue,#7094ce);
-    padding: 1.3rem;
-    border-radius:2rem ;
-    border: 1px transparent;
-    transition: var(--transition);
-}
-.portfolio_item:hover{
-    background: transparent;
-    border: 1px solid black;
-}
-.portfolio_item_img img{
-border-radius: 1.5rem;
-overflow: hidden;
-margin-left: 28%;
-}
-.portfolio_item h3{
-    margin: 1.2rem 0 2rem;
+.portfolio_content{
+    padding-top: 60px;
+    position: relative;
+    display: flex;
+    padding: 150px 0px 30px 0px;
     justify-content: center;
+    align-items: center;
+   gap: 30px;
+}
+#portfolio .container{
+    
+   margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+   
+}
+#portfolio .container .drop{
+position: relative;
+width: 320px;
+height: 350px;
+box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.05);
+}
+
+
+#portfolio .container .drop h3 {
+ color: brown;
+}
+#portfolio .container .drop p {
+    font-size: 16px;
+    margin: 9px;
+}
+#portfolio .container .drop:nth-child(1){
+    border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+
+
+#portfolio .container .drop:nth-child(1){
+    border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+
+
+#portfolio .container .drop:nth-child(2){
+    border-radius: 73% 27% 59% 41% / 57% 59% 41% 43%;
+}
+#portfolio .container .drop:hover{
+    border-radius: 50%;
+}
+#portfolio .container .drop .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
+    padding: 4px;
+    gap: 15px;
+}
+#portfolio .container .drop .content h2{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #eff0f4;
+    border-radius: 50%;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255,1),
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 15px 10px rgba(0, 0, 0, 0.025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
 }
 .portfolio_item-cta{
-    justify-content: center;
+    gap: 5px;
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    justify-content: center;
 }
 
-.portfolio_item_img img{
-    width: 42%;
-}
-
-@media only screen and (max-width: 1024px)  {
-    .protfolio_container{
-        grid-template-columns: 1fr 1fr;
-        gap:1.2rem
+@media only screen and (max-width: 1080px)  {
+    .portfolio_content {
+        flex-wrap: wrap;
+    
     }
-
-}
-
-@media only screen and (max-width: 1024px)  {
-    .protfolio_container{
-        grid-template-columns: 1fr 1fr;
-        gap:1.2rem
-    }
-
-}
-
-@media only screen and (max-width: 600px)  {
-    .protfolio_container{
-        grid-template-columns: 1fr;
-        gap:1rem
-    }
-
+    #portfolio .container {
+        
+        width: 320px;
+        height: 350px;
+        }
 }
 

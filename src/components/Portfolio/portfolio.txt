@@ -1,0 +1,124 @@
+import React from 'react'
+import './Portfolio.css'
+import img1 from '../../assets/Image1.jpeg'
+const Portfolio = () => {
+  
+    const data=[
+      {id:1,
+      image:img1,
+      title:'title',
+      github:'https://github.com/Tanmoy001/Text-Modifier',
+      demo:'https://635f909c1beb547f6300e782--dapper-sopapillas-8765b6.netlify.app/'
+    },
+    {id:2,
+      image:img1,
+      title:'title',
+      github:'https://github.com/Tanmoy001/Text-Modifier',
+      demo:'https://635f909c1beb547f6300e782--dapper-sopapillas-8765b6.netlify.app/'
+    },
+    {id:3,
+      image:img1,
+      title:'title',
+      github:'https://github.com/Tanmoy001/Text-Modifier',
+      demo:'https://635f909c1beb547f6300e782--dapper-sopapillas-8765b6.netlify.app/'
+    }
+    ]
+    return (
+    <section id='portfolio'>
+      <h5>My recent work</h5>
+      <h2>Portfolio</h2>
+      <div className='container protfolio_container'>
+        { data.map(({id, image, title, github, demo})=>{
+          return(
+        <div key={id}className='portfolio_item'>
+          <div className='portfolio_item_img'>
+            <img src={image}alt={title}/>
+          </div>
+          <h3>{title}</h3>
+          <div className='portfolio_item-cta'>
+            <a href={github} className='btn'>Github</a>
+            <a href={demo} className='btn btn-primary'>Live Demo</a>
+          </div>
+        </div>
+          )
+      })}
+        </div>
+      
+    </section>
+  )
+}
+
+export default Portfolio
+
+
+//////////////////////css/////////////////////
+
+section {
+    margin-top: 43px;
+}
+.protfolio_container{
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+    margin-top: 76px;
+}
+.portfolio_item{
+    background: linear-gradient(45deg,lightblue,#7094ce);
+    padding: 1.3rem;
+    border-radius:2rem ;
+    border: 1px transparent;
+    transition: var(--transition);
+}
+.portfolio_item:hover{
+    background: transparent;
+    border: 1px solid black;
+}
+.portfolio_item_img img{
+border-radius: 1.5rem;
+overflow: hidden;
+margin-left: 28%;
+}
+.portfolio_item h3{
+    margin: 1.2rem 0 2rem;
+    justify-content: center;
+    text-align: center;
+}
+.portfolio_item-cta{
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio_item_img img{
+    width: 42%;
+}
+
+@media only screen and (max-width: 1024px)  {
+    .protfolio_container{
+        grid-template-columns: 1fr 1fr;
+        gap:1.2rem
+    }
+
+}
+
+@media only screen and (max-width: 1024px)  {
+    .protfolio_container{
+        grid-template-columns: 1fr 1fr;
+        gap:1.2rem
+    }
+
+}
+
+@media only screen and (max-width: 600px)  {
+    .protfolio_container{
+        grid-template-columns: 1fr;
+        gap:1rem
+    }
+
+}
+
+
+
