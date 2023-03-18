@@ -5,10 +5,10 @@
     margin-bottom: 4rem;
 }
 .portfolio_content{
-    padding-top: 60px;
+    
     position: relative;
     display: flex;
-    padding: 150px 0px 30px 0px;
+    padding: 50px 0px 30px 0px;
     justify-content: center;
     align-items: center;
    gap: 30px;
