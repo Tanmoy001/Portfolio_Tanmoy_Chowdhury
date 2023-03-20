@@ -123,6 +123,7 @@ width: 42%;
 }
 .about_content p{
     margin: 2rem 0 2.6rem;
+    font-family: cursive;
 }
 
 @media only screen and (max-width: 1080px){

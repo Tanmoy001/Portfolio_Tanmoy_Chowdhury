@@ -10,6 +10,7 @@ footer a{
     
 }
 .footer_logo{
+    font-family: inherit;
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 2rem;

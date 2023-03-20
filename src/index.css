@@ -70,6 +70,7 @@ a:hover{
 }
 
 .btn{
+  font-family: cursive;
   width: max-content;
   display: inline-block;
   color: var(--color-primary);

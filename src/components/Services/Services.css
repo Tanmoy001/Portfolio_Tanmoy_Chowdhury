@@ -152,6 +152,7 @@ margin-bottom: 1rem;
     height: 35%;
 }
 #services .container .card .content .details h2{
+    font-family: math;
 font-size: 1.5em;
 font-weight: 500;
 color: #45f3ff;
@@ -161,6 +162,7 @@ line-height: 1.2em;
 color: #fff;
 opacity: 0;
 transform: 0.5s;
+font-family: cursive;
 }
 #services .container .card:hover .content {
     margin-left: 0;
