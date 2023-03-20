@@ -52,11 +52,11 @@ const Portfolio = () => {
         <div className="drop">
             <div className="content">
                 <h2>{id}</h2>
-              <h3>{title}</h3>
-              <p>{description}</p>
+              <h3 style={{fontfamily: 'math'}}>{title}</h3>
+              <p style={{fontFamily:'italic'}}>{description}</p>
               <div className='portfolio_item-cta'>
-                <a href={github} className='btn'>Github</a>
-                <a href={demo} className='btn btn-primary'>Live Demo</a>
+                <a href={github} className='btn' style={{border:'none',fontWeight:'600',fontFamily:'cursive'}}>Github</a>
+                <a href={demo} className='btn btn-primary'style={{border:'none',fontWeight:'600',fontFamily:'cursive'}}>Live Demo</a>
               </div>
              </div>
          
