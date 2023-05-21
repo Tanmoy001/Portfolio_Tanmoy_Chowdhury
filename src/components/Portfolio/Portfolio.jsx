@@ -18,6 +18,13 @@ const Portfolio = () => {
       demo:'https://coincom.netlify.app/'
     },
     {id:3,
+      title:'Decentralized Cloud Storage',
+      description:'This is a file storage system with the help of blockchain and pinata.',
+      github:'https://github.com/Tanmoy001/Decentralize-file-Storage',
+      demo:'https://decentralized-storage-system.netlify.app/'
+      
+    },
+    {id:4,
       title:'Text Modifier',
       description:'This is a text modifier where you can edit your text',
       github:'https://github.com/Tanmoy001/Text-Modifier',
