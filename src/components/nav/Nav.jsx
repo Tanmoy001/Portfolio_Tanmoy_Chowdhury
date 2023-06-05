@@ -20,31 +20,31 @@ const Nav = ({setColor}) => {
             <ul>
                 <li className="list">
                     <a href="#header" id='1'>
-                    <span className="icon" onMouseOver={setColor}style={{color: "#FEFAE0"}}>< AiOutlineHome/></span>
+                    <span className="icon" /* onClick={()=>{ document.body.style.backgroundColor="#FEFAE0";}} */ style={{color:"#AF3B6E"}}>< AiOutlineHome/></span>
                     
                     </a>
                 </li>
                 <li className="list" >
                     <a href="#about" id='2'>
-                    <span className="icon"onMouseOver={setColor}style={{color:"#abd699"}}><BiUserCircle/></span>
+                    <span className="icon"/* onClick={()=>{ document.body.style.backgroundColor="#C492B1";}}  */style={{color:"#C492B1"}}><BiUserCircle/></span>
                     
                     </a>
                 </li>
                 <li className="list" >
                     <a href="#experience" id='3'>
-                    <span className="icon"onMouseOver={setColor}style={{color:"#05c46b"}}><BiBook/></span>
+                    <span className="icon"/* onClick={()=>{ document.body.style.backgroundColor="#05c46b";}}  */style={{color:"#05c46b"}}><BiBook/></span>
                    
                     </a>
                 </li>
                 <li className="list" >
                     <a href="#services"id='4'>
-                    <span className="icon"onMouseOver={setColor}style={{color:"#75c9b7"}}><RiServiceLine/></span>
+                    <span className="icon"/* onClick={()=>{ document.body.style.backgroundColor="#75c9b7";}} */ style={{color:"#75c9b7"}}><RiServiceLine/></span>
                     
                     </a>
                 </li>
                 <li className="list" >
                     <a href="#Contact"id='5'>
-                    <span className="icon"onMouseOver={setColor}style={{color:"#E8D7FF"}}><BiMessageSquareDetail/></span>
+                    <span className="icon"/* onClick={()=>{ document.body.style.backgroundColor="#E8D7FF";}}  */style={{color:"#424651"}}><BiMessageSquareDetail/></span>
                     
                     </a>
                 </li>

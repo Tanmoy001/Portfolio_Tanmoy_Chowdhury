@@ -10,7 +10,6 @@ import Footer from './components/footer/Footer';
 import React,{useState,useEffect} from 'react';
 import BeatLoader from 'react-spinners/BeatLoader'
 
-
 const App = ()=>{
       const [loader,setLoader]=useState(false)
       useEffect(()=>{
@@ -21,7 +20,7 @@ const App = ()=>{
 
       },[])
   
-  const setTheme =(color)=>{
+ /*  const setTheme =(color)=>{
         document.documentElement.style.setProperty('--color-bg',color)
       }
       const setColor=(event)=>{
@@ -31,8 +30,16 @@ const App = ()=>{
         console.log(currentcolor)
         localStorage.setItem('color',currentcolor);
       }
+ */
 
+     /*  const [color, setColor] = useState("white") */
+/* 
+      const togglemode=(cls)=>{
 
+          document.body.style.backgroundColor="white";
+          showAlert("Light mood enbaled","sucess");
+        }
+      } */
   return (
     <div className='App'>
     {loader ? 
@@ -48,10 +55,11 @@ const App = ()=>{
   )
   :(
   
-  <>
+  <div className='mainsection'/* style={{backgroundColor:color}} */>
+   {/*  {console.log(setColor)} */}
       <Header/>
       <div className='color-list'>
-      <Nav setColor={setColor}/>
+      <Nav /* setColor={setColor} *//>
       </div>
       <About/>
       <Experience/>
@@ -59,7 +67,7 @@ const App = ()=>{
       <Portfolio/>
       <Contact/>
       <Footer/>
-      </>
+      </div>
     )}
     </div>
   )

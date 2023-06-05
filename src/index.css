@@ -31,7 +31,7 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  background-color:var(--color-bg) ;
+  background-color:#EBEBD3 ;
   color: var(--color-white);
   line-height: 1.7;
 }
@@ -66,7 +66,7 @@ a{
   transition: var(--transition);
 }
 a:hover{
-  color: var(--color-light);
+  color: #C492B1;
 }
 
 .btn{
