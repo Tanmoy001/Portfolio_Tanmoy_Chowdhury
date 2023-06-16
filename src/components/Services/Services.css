@@ -68,7 +68,7 @@
     width: 150px;
     height: 150px;
     transform: translateX(-50%);
-    background: #000;
+    background: sandybrown;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;

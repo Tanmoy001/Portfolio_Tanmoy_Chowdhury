@@ -11,6 +11,7 @@ section>h2{
     grid-template-columns: 1fr 1fr;
 }
 .experience_fontend{
+        border: 1px solid sandybrown;
 background: lightblue;
 padding: 2.4rem 1rem;
 border-radius: 2rem;
