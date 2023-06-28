@@ -28,7 +28,7 @@ const Portfolio = () => {
       title:'Text Modifier',
       description:'This is a text modifier where you can edit your text',
       github:'https://github.com/Tanmoy001/Text-Modifier',
-      demo:'https://635f909c1beb547f6300e782--dapper-sopapillas-8765b6.netlify.app/'
+      demo:'https://onlinetextmodifier.netlify.app/'
       
     }
     ]
