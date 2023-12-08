@@ -9,6 +9,7 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import React,{useState,useEffect} from 'react';
 import BeatLoader from 'react-spinners/BeatLoader'
+import CustomCursor from './components/cursor/CustomCursor';
 
 const App = ()=>{
       const [loader,setLoader]=useState(false)
@@ -57,8 +58,10 @@ const App = ()=>{
   
   <div className='mainsection'/* style={{backgroundColor:color}} */>
    {/*  {console.log(setColor)} */}
+   <CustomCursor/>
       <Header/>
       <div className='color-list'>
+        
       <Nav /* setColor={setColor} *//>
       </div>
       <About/>

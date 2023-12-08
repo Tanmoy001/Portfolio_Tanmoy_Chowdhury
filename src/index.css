@@ -34,6 +34,7 @@ body{
   background-color:#EBEBD3 ;
   color: var(--color-white);
   line-height: 1.7;
+  cursor: none;
 }
 
 /*=================General style==================*/
