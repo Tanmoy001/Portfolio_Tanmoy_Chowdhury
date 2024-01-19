@@ -8,9 +8,10 @@
     
     position: relative;
     display: flex;
-    padding: 50px 0px 30px 0px;
+    padding: 35px 0px 40px 0px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
    gap: 30px;
 }
 #portfolio .container{
@@ -25,6 +26,7 @@
    
 }
 #portfolio .container .drop{
+    background-color: cadetblue;
 position: relative;
 width: 320px;
 height: 350px;
@@ -68,7 +70,8 @@ box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.0
     position: relative;
     width: 80px;
     height: 80px;
-    background: #eff0f4;
+    background: #D3F9B5;
+    color: #111;
     border-radius: 50%;
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
     inset -2px -5px 10px rgba(255, 255, 255,1),
@@ -89,8 +92,16 @@ box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.0
     font-weight:'600';
     font-family:'cursive';
 } */
-
-@media only screen and (max-width: 1080px)  {
+.protfolio_container{
+    
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 1px solid sandybrown;
+    border-radius: 1rem;
+    gap: 5rem;
+}
+@media only screen and (max-width: 1800px)  {
     .portfolio_content {
         flex-wrap: wrap;
     

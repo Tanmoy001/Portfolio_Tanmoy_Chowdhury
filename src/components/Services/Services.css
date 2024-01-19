@@ -62,6 +62,8 @@
     background: #292929;
 }
 #services .container .card .imgBx{
+    justify-content: center;
+    display: flex;
     position: absolute;
     top: -60px;
     left: 50%;

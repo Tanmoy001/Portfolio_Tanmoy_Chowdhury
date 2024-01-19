@@ -15,7 +15,7 @@
   --color-bg-variant:#775144 ;
   --color-primary:#AA336A;
   --color-primary-variant:rgba(77,181,255,0.4);
-  --color-white:#001011;
+  --color-white:#fff;
   --color-light:rgba(255,255,255,0.6);
 
   --transition: all 400 ease;
@@ -25,13 +25,13 @@
 
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   display: none;
-}
+} */
 
 body{
   font-family: 'Poppins', sans-serif;
-  background-color:#EBEBD3 ;
+  background-color:#28282B ;
   color: var(--color-white);
   line-height: 1.7;
   cursor: none;
@@ -74,7 +74,7 @@ a:hover{
   font-family: cursive;
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: #ECCE8E;
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
@@ -83,7 +83,7 @@ a:hover{
 }
 
 .btn:hover{
-  background:#4285F4;
+  background:#5d7498;
   color: var(--color-bg);
   border-color: transparent;
 }
@@ -91,6 +91,27 @@ img{
   display: block;
 width: 100%;
 object-fit: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #28282B; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D3F9B5; 
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #D6E3F8; 
 }
 /*=========== MEDIUM DEVICES==================*/
 @media screen and(max-width:1024px) {
@@ -119,3 +140,19 @@ object-fit: cover;
   }
   
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+canvas {
+  opacity: 0;
+  touch-action: none;
+  animation: fade-in 3s ease 0.5s forwards;
+}
+

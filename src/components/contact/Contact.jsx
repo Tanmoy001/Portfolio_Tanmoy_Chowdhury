@@ -9,8 +9,8 @@ import { AiOutlineWhatsApp } from 'react-icons/ai';
 const Contact = () => {
   return (
     <section id='Contact'>
-      <h5>Get In Touch </h5>
-      <h2>Contact Me</h2>
+      <h5>Fill out the form and I will reach out, as soon as possible! </h5>
+      <h2>Get In Touch!</h2>
       <div className='container contact_container'>
         <div className='contact_options'>
           <article className='contact_option'>

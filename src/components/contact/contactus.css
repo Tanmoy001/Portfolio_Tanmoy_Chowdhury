@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: auto;
-    background: sandybrown;
+    /* background: sandybrown; */
 }
 .contact_container{
     width: 80%;
@@ -116,7 +116,7 @@ input[type="submit"]
     border-radius: 2px;
 }
 .submit:hover{
-    background: white;
+    background: #c0deab;;
     border: 1px solid black;
 }
 @media only screen and (max-width: 900px){

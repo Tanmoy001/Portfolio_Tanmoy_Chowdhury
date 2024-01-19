@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 1.2rem;
+    /* padding-top: 1.2rem; */
     overflow: hidden;
 }
 .header_container{
@@ -15,7 +15,7 @@ header{
 }
 .developer{
     margin-left: 2%;
-    color: black;
+    color: #fff;
     text-transform: uppercase;
 }
 .text-light{
@@ -25,7 +25,7 @@ header{
 
 .text-light::before{
     content:'Frontend';
-    color: blue;
+    color: #C6E0FF;
     position: absolute;
     top: 0;
     margin-right:0 ;
@@ -34,6 +34,96 @@ header{
     -webkit-animation: slide 1.8s ease-in-out infinite;
      overflow: hidden;
 }
+.grid_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600vh;
+    /* margin-top: 4rem; */
+}
+.photo_section{
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,.05), 25px 35px 20px rgba(0,0,0,.05);
+    height: auto;
+    background-color: #D3F9B5;
+    transform: skew(-11deg);
+   
+    width: 24vw;
+    margin-left: 29%;
+    height: 89vh;
+    overflow: hidden;
+}
+#anim {
+    -webkit-clip-path: polygon(16% 0,100% 0,83% 100%,0 100%);
+    clip-path: polygon(16% 0,100% 0,83% 100%,0 100%);
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+#anim:before {
+    -webkit-animation: showBlack 2s ease forwards, showImg 3s ease forwards;
+    animation: showBlack 2s ease forwards, showImg 3s ease forwards;
+    background-color:#6ce5b1; /* #000;  Black color for the overlay */
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  
+ 
+  @keyframes showImg {
+    0% {
+      left: 0;
+      width: 0;
+    }
+    50% {
+      left: 0;
+      width: 100%;
+    }
+    100% {
+      left: 100%;
+      width: 0;
+    }
+  }
+   @keyframes showBlack {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+/* #anim:before {
+    -webkit-animation: showImg 3s ease;
+    animation: showImg 3s ease;
+    background-color: #6ce5b1;
+    background-color: #6ce5b1;
+} */
+
+/* #anim:before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+@keyframes showImg {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
+    
+} */
 
 @keyframes slide{
     0%{
@@ -77,15 +167,17 @@ header{
     height: 2rem;
     background: var(--color-primary);
 }
-#photo,#me{
-    width: 22rem;
+.me #photo,#me{
+    transform: skew(9deg);
+    width: 25rem;
     position: absolute;
-    left: 50%;
-    transform:translateX(-50%);
-    margin-top: 2.2rem;
+    /* left: 50%; */
+    /* transform:translateX(-50%); */
+    margin-top: 6rem;
     border-radius: 10% 10% 0 0;
+    right: 3%;
 }
-#photo{
+.me #photo{
     height: 21rem;
 }
 

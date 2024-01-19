@@ -1,15 +1,20 @@
 import React from 'react'
 import'./about.css'
-import backg2 from '../../assets/333.png'
-import backg from '../../assets/222.jpg'
-import Mypic from '../..//assets/mypic2.png'
+import backg2 from '../../assets/about.jpg'
+
+// import backg3 from '../../assets/uiux.png'
 function Pictures() {
   return (
-    
+        
         <div className='pictures'>
+          <div className='cloud'>
+            <div className='about_pic'>
+              
+            
             <img src={backg2} id="backg2" alt=''/>
-            <img src={backg} id="backg" alt=''/>
-            <img src={Mypic} id='mypic' alt=''/>
+            </div>
+            
+            </div>
             
         </div>
    

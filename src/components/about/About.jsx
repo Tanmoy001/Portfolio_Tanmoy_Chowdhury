@@ -28,7 +28,7 @@ const About = () => {
                 </article>
               </div>
                 <p>
-                  Currently I am serving for the "Creamy Layer" as a frontend developer
+                  Currently I am serving as a freelancer
                 </p>
                 <a href='#Contact' className='btn btn-primary'>Lets talk</a>
             

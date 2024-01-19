@@ -4,13 +4,14 @@ section{
 .container_about{
     width: 100%;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
 .container .card{
     position: relative;
-    width: 80rem;
+    width: 52rem;
     height: 650px;
     margin: 10px;
     transition: 0.5s;
@@ -18,11 +19,20 @@ section{
     align-items: center;
 }
 .container .card img{
-    position:absolute;
+    /* position:absolute; */
     bottom: 0;
-   transform: translate(37%);
+   /* transform: translate(37%); */
     height: 605px;
 
+}
+
+.about_pic{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 15rem;
+    bottom: 26%;
+    z-index: 10;
 }
 .container .card .content{
     position: relative;
@@ -63,25 +73,23 @@ section{
 }
 
 .pictures{
-    width: 46rem;
-    height: 37rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .pictures img{
 width: 42%;
 }
-#backg{
-    /*margin-bottom: 129px;
-    margin-left: 42%;*/
-    margin-left: 8.5rem;
-    margin-bottom: 90px;
-    height: 45%;
-    width: 35%;
-    border-radius: 90% 10% 10% 0;
-}
 
 #backg2{
-    width: 78%;
-    height: 95.5%;
+    /* position: absolute; */
+    width: 90%;
+    height: 97%;
+    border-radius: 8rem;
+    right: 43%;
+    top: -4%;
 }
 
 .about_content{
@@ -104,7 +112,7 @@ width: 42%;
     gap: 1.5rem;
 }
 .about_card{
-    background: lightblue;
+    /* background: lightblue; */
     border: 1px solid sandybrown;
     border-radius: 1rem;
     padding: 2rem;
@@ -112,7 +120,8 @@ width: 42%;
     transition: var(--transition);
 }
 .about_card:hover{
-    background: transparent;
+    background: #6ce5b1;
+    color: #111;
     border-color: #111;
 }
 .about_icon{
@@ -125,6 +134,37 @@ width: 42%;
     margin: 2rem 0 2.6rem;
     font-family: cursive;
 }
+
+/** cloud **/
+.cloud{ 
+    color: white;
+    background: white;
+    margin-top:70px;
+    width:350px;
+    height:240px;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+ }
+ .cloud::after, .cloud::before{
+     content:"";
+     position:relative;
+     display:inline-block;
+     background:inherit;
+     border-radius:inherit;
+ }
+ .cloud::after{
+     width:100px;
+     height:100px;
+     top:-120px;
+     right:120px;
+     z-index: 1;
+ }
+ .cloud::before{
+     width:180px;
+     height:180px;
+     top: -70px;
+     left:130px;
+ }
 
 @media only screen and (max-width: 1080px){
     #backg2 {

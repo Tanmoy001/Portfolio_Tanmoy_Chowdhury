@@ -42,3 +42,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+.train_section{
+  overflow: auto;
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+

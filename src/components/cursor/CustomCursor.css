@@ -10,35 +10,55 @@
   
   .custom-cursor {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #fff;
+    width: 8px;
+    height: 8px;
+    color: orange;
+    background-color: orange;
+    /* border: 2px solid orange; */
     border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease;
+    /* transform: translate(-50%, -50%); */
+    /* transition: all 0.3s ease; */
     z-index: 2;
     /* Your main cursor styles */
   }
+
   
   .circle {
     position: absolute;
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     opacity: 0.5;
     z-index: 1;
     animation: circleAnimation 1s infinite linear;
   }
+  .big-cursor .custom-cursor {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    /* color: orange; */
+    /* background-color: orange; */
+    border: 2px solid orange; 
+    border-radius: 50%;
+    opacity: 0.5;
+     /* transform: translate(-50%, -50%);  */
+    z-index: 2;
+    /* Your main cursor styles */
+  }
   
   .circle1 {
+    width: 20px;
+    height: 20px;
     background-color: red;
   }
   
   .circle2 {
+    width: 30px;
+    height: 30px;
     background-color: yellow;
   }
   
   .circle3 {
+    width: 40px;
+    height: 40px;
     background-color: lightblue;
   }
   
