@@ -176,7 +176,45 @@ width: 42%;
 }
 
 /*=========== SMALL DEVICES==================*/
+@media only screen and (max-width: 900px){
+    
+    .about_content{
+    margin: 0px;
+        padding: 2rem 3rem;
+    }
+    .container .card{
+        height: 563px;
+    }
+    .container_about{
+    display: block;
+    }
+    .card{
+        width: auto;
+        height: auto;
+    }
+    .container .card{
+        width: auto;
+    }
+    .container .card img{
+        transform: translate(20%);
+    }
+    #backg2 {
+        display: flex;
+        right: 6rem;
+    /* bottom: 2rem; */
+    top: 0rem;
+    position: relative;
+        width: 90%;
+        /* margin-left: 9rem; */
+        height: 108.5%;
+    }
+    #backg {
+        margin-left: 14%;
+        width: 37%;
+        height: 54%;
+    }
 
+  }
   @media only screen and (max-width: 750px){
     #backg2 {
         top: 1rem;
@@ -194,6 +232,13 @@ width: 42%;
         border-radius: 0px;
     }
   }
+  
+@media only screen and (max-width: 165px){
+    .me #photo, #me {
+    right: 10%;
+    bottom: 34%;
+    }
+}
 /*   
   @media only screen and (max-width: 650px){
     .container .card {

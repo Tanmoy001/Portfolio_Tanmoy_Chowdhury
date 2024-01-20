@@ -178,6 +178,7 @@ opacity: 1;
     .card .imgBx img {
         height: 74%;
         width: 72%;
+        left: 0%;
 }
 .card .imgBx img:hover {
   margin-bottom: 1.5rem;

@@ -156,7 +156,7 @@ header{
     position: absolute;
     justify-content: center;
     left: 0;
-    top: 25rem;
+    top: 20rem;
     
 }
 .header__socials::after{
@@ -181,7 +181,7 @@ header{
 }
 .grid_section_mobile{
     display: grid;
-    grid-template-rows: 1fr 1.5fr .8fr;
+    grid-template-rows: 1fr 2.5fr 1fr;
     /* height: 600vh; */
     /* margin-top: 4rem; */
 }
@@ -190,17 +190,77 @@ header{
      margin-left:4rem;
 }
 
-@media only screen and (max-width: 1280px)  {
+@media only screen and (max-width: 1600px)  {
+    .photo_section{
+        height: 90vh;
+    }
+    header{
+        height: 91vh;
+    }
+}
+@media only screen and (max-width: 1500px)  {
     .photo_section{
         height: 80vh;
     }
+    header{
+        height: 81vh;
+    }
+}
+@media only screen and (max-width: 1280px)  {
+    .photo_section{
+        height: 75vh;
+    }
+    header{
+        height: 75vh;
+    }
+    .header__socials {
+        top: 17rem;
+        }
+    }
+
+@media only screen and (max-width: 1180px)  {
+    .photo_section{
+        height: 75vh;
+    }
+    header{
+        height: 85vh;
+    }
+}
+@media only screen and (max-width: 1080px)  {
+    .photo_section{
+        height: 73vh;
+    }
+}
+/* @media only screen and (max-width: 980px)  {
+    .photo_section{
+        height: 60vh;
+    }
+} */
+@media only screen and (max-width: 880px)  {
+    .photo_section{
+        height: 50vh;
+    }
+    header{
+        height: 60vh;
+    }
+    .header__socials {
+    top: 16rem;
+    }
+   
 }
 @media only screen and (max-width: 750px)  {
+    header{
+        height: 100vh;
+    }
+    .cta {
+      margin-top:0rem;
+    }
     .personal_sec{
         padding-top: 11%;
     margin-left: 1rem;
     }
 .me #photo, #me {
+    bottom: 28%;
     transform: skew(0deg);
     display: flex;
     justify-content: center;
@@ -221,8 +281,12 @@ header{
 
 
 }
-
-@media only screen and (max-width: 386px)  {
+@media only screen and (max-width: 510px)  {
+    #photo,#me{  
+        right: 0%;
+}
+}
+/* @media only screen and (max-width: 386px)  {
     #photo,#me{  
         width: 14rem;
         margin-left: 1%;
@@ -237,4 +301,4 @@ header{
     height: 92vh;
 }
 
-}
+} */
