@@ -50,7 +50,7 @@ const Header = () => {
         </>):(
           <>
           <div className='grid_section'>
-            <div className='personal_sec' style={{ paddingTop: '36%', marginLeft: '4rem' }}>
+            <div className='personal_sec'>
               <h5>Hello I'm</h5>
               <h1>Tanmoy Chowdhury</h1>
               <div className='text'>
