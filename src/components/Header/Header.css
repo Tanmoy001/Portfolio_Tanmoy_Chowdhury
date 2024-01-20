@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 98vh;
     /* padding-top: 1.2rem; */
     overflow: hidden;
 }
@@ -37,18 +37,17 @@ header{
 .grid_section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 600vh;
+    /* height: 600vh; */
     /* margin-top: 4rem; */
 }
 .photo_section{
     box-shadow: inset 20px 20px 20px rgba(0,0,0,.05), 25px 35px 20px rgba(0,0,0,.05);
-    height: auto;
+    height: 95vh;
     background-color: #D3F9B5;
     transform: skew(-11deg);
    
-    width: 24vw;
+    width: 81%;
     margin-left: 29%;
-    height: 89vh;
     overflow: hidden;
 }
 #anim {
@@ -169,24 +168,48 @@ header{
 }
 .me #photo,#me{
     transform: skew(9deg);
-    width: 25rem;
+    width: 98%;
     position: absolute;
     /* left: 50%; */
     /* transform:translateX(-50%); */
     margin-top: 6rem;
     border-radius: 10% 10% 0 0;
-    right: 3%;
+    right: 11%;
 }
 .me #photo{
     height: 21rem;
 }
+.grid_section_mobile{
+    display: grid;
+    grid-template-rows: 1fr 1.5fr .8fr;
+    /* height: 600vh; */
+    /* margin-top: 4rem; */
+}
+.personal_sec{
+    padding-top: 36%;
+     margin-left:4rem;
+}
 
-
-@media only screen and (max-width: 650px)  {
+@media only screen and (max-width: 1280px)  {
+    .photo_section{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width: 750px)  {
+    .personal_sec{
+        padding-top: 11%;
+    margin-left: 1rem;
+    }
+.me #photo, #me {
+    transform: skew(0deg);
+    display: flex;
+    justify-content: center;
+    right: 20%;
+}
     .header__socials {
     flex-direction: row;
     margin-top: 0;
-    top: 20px;
+    top: 0px;
     position: relative;
     }
     .header__socials::after{

@@ -1,5 +1,5 @@
 section{
-    margin-top: 0px;
+    margin-top: 3rem;
 }
 .container_about{
     width: 100%;
@@ -11,7 +11,7 @@ section{
 }
 .container .card{
     position: relative;
-    width: 52rem;
+    width: 100%;
     height: 650px;
     margin: 10px;
     transition: 0.5s;
@@ -93,8 +93,7 @@ width: 42%;
 }
 
 .about_content{
-    margin-top: 173px;
-    margin-right: 24%;
+    margin: 10%;
 }
 
 #mypic{
@@ -177,51 +176,15 @@ width: 42%;
 }
 
 /*=========== SMALL DEVICES==================*/
-@media only screen and (max-width: 900px){
-    .about_content{
-        margin-top: 0;
-    margin-right: 0;
-        padding: 2rem 5rem;
-    }
-    .container .card{
-        height: 563px;
-    }
-    .container_about{
-    display: block;
-    }
-    .card{
-        width: auto;
-        height: auto;
-    }
-    .container .card{
-        width: auto;
-    }
-    .container .card img{
-        transform: translate(20%);
-    }
-    #backg2 {
-        width: 65%;
-        margin-left: 9rem;
-        height: 108.5%;
-    }
-    #backg {
-        margin-left: 14%;
-        width: 37%;
-        height: 54%;
-    }
-    .pictures{
-        width: 0;
-        height: 0;
-    }
 
-  }
-  @media only screen and (max-width: 781px){
+  @media only screen and (max-width: 750px){
     #backg2 {
-        width: 67%;
-        margin-left: 3rem;
-        margin-bottom: 6rem;
-        height: 69.5%;
-    }
+        top: 1rem;
+           width: 100%;
+           margin-left: 3rem;
+           margin-bottom: 0rem;
+           height: 90.5%;
+       }
     #backg {
         height: 16rem;
         margin-left: 18%;
@@ -231,7 +194,7 @@ width: 42%;
         border-radius: 0px;
     }
   }
-  
+/*   
   @media only screen and (max-width: 650px){
     .container .card {
         height: 415px;
@@ -299,4 +262,4 @@ width: 42%;
     margin-right: 0;
     padding: 2rem 2rem;
 }
-  }
+  } */

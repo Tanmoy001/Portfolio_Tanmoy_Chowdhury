@@ -12,12 +12,27 @@ import BeatLoader from 'react-spinners/BeatLoader'
 import CustomCursor from './components/cursor/CustomCursor';
 
 const App = ()=>{
+  const [isMobile, setIsMobile] = useState(false);
       const [loader,setLoader]=useState(false)
       useEffect(()=>{
         setLoader(false);
         setTimeout(() => {
           setLoader(false)
         }, 1500);
+        const handleResize = () => {
+          setIsMobile(window.innerWidth <= 1025);
+        };
+    
+        // Initial check on component mount
+        handleResize();
+    
+        // Add event listener for window resize
+        window.addEventListener('resize', handleResize);
+    
+        // Clean up event listener on component unmount
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
 
       },[])
   
@@ -60,7 +75,7 @@ const App = ()=>{
   <div className='mainsection'/* style={{backgroundColor:color}} */>
     {/* <My3DScene/> */}
    {/*  {console.log(setColor)} */}
-   <CustomCursor/>
+   {isMobile?(<></>):(<CustomCursor/>)}
       <Header/>
       <div className='color-list'>
         
