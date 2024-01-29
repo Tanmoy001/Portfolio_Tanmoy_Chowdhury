@@ -46,12 +46,12 @@ box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.0
 }
 
 
-#portfolio .container .drop:nth-child(1){
+#portfolio .container .drop:nth-child(2){
     border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
 }
 
 
-#portfolio .container .drop:nth-child(2){
+#portfolio .container .drop:nth-child(3){
     border-radius: 73% 27% 59% 41% / 57% 59% 41% 43%;
 }
 #portfolio .container .drop:hover{
@@ -65,6 +65,7 @@ box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.0
     text-align: center;
     padding: 4px;
     gap: 15px;
+    z-index: 50;
 }
 #portfolio .container .drop .content h2{
     position: relative;
@@ -101,6 +102,52 @@ box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.0
     border-radius: 1rem;
     gap: 5rem;
 }
+#portfolio .container .drop .image:nth-child(1){
+    border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+
+
+#portfolio .container .drop .image:nth-child(2){
+    border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+
+
+#portfolio .container .drop .image:nth-child(3){
+    border-radius: 73% 27% 59% 41% / 57% 59% 41% 43%;
+}
+#portfolio .container .drop:hover{
+    .image{
+        border-radius: 50%;
+        opacity: 40%;
+        visibility: visible;
+
+    }
+
+}
+
+.image{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+.image #project_img{
+    width: 100%;
+    height: 100%;
+}
+/* .drop :hover{
+    .image{
+        opacity: 1;
+        visibility: visible;
+    }
+} */
 @media only screen and (max-width: 1800px)  {
     .portfolio_content {
         flex-wrap: wrap;

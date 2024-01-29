@@ -1,5 +1,11 @@
 import React from 'react'
 import './Portfolio.css'
+import cover_one from '../../assets/neibour.png'
+import cover_two from '../../assets/lifeargan.png'
+import cover_three from '../../assets/decentra.png'
+
+import cover_four from '../../assets/coincom.png'
+
 const Portfolio = () => {
 
   const data = [
@@ -9,7 +15,8 @@ const Portfolio = () => {
       title: 'NEIghborING',
       description: 'where you can get to know about food attraction weather around you',
       github: 'https://github.com/Tanmoy001/NEIghborING',
-      demo: 'https://neighboring.netlify.app/'
+      demo: 'https://neighboring.netlify.app/',
+      pic:cover_one
 
     },
     {
@@ -17,6 +24,7 @@ const Portfolio = () => {
       title: 'LiveArgar',
       description: 'In LiveARgan you can see the organs with your surrounding visualization.',
       github: 'https://github.com/Tanmoy001/LifeARgan',
+      pic:cover_two
       // demo: 'https://coincom.netlify.app/'
     },
     {
@@ -24,7 +32,8 @@ const Portfolio = () => {
       title: 'Decentralized Cloud Storage',
       description: 'This is a file storage system with the help of blockchain and pinata.',
       github: 'https://github.com/Tanmoy001/Decentralize-file-Storage',
-      demo: 'https://decentralized-storage-system.netlify.app/'
+      demo: 'https://decentralized-storage-system.netlify.app/',
+      pic:cover_three
 
     },
     {
@@ -32,7 +41,8 @@ const Portfolio = () => {
       title: 'CoinCom',
       description: 'CoinCom will give you update about your digital coin and shares',
       github: 'https://github.com/Tanmoy001/coinstatus',
-      demo: 'https://coincom.netlify.app/'
+      demo: 'https://coincom.netlify.app/',
+      pic:cover_four
     }
   ]
   return (
@@ -58,10 +68,11 @@ const Portfolio = () => {
 
 <div className='protfolio_container'>
       <div className='portfolio_content'>
-        {data.map(({ id, description, title, github, demo }) => {
+        {data.map(({ id, description, title, github, demo,pic }) => {
           return (
             <div key={id} className="container">
-              <div className="drop">
+              <div className="drop">  
+              <div className='image'> <img src={pic} id="project_img" alt='' /></div>
                 <div className="content">
                   <h2>{id}</h2>
                   <h3 style={{ fontfamily: 'math' }}>{title}</h3>
