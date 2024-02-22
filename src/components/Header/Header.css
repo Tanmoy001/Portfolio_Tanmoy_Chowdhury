@@ -223,11 +223,13 @@ header{
     .personal_sec{
         padding-top: 11%;
     margin-left: 1rem;
+    margin-bottom: 3%;
     }
     .me{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 0%;
     }
 .me #photo, #me {
     box-shadow: 10px 10px rgba(0,0,0,0.2);
@@ -249,6 +251,7 @@ header{
     }
     #photo,#me{
         width: 18rem;
+        border-radius: 9%;
     }
 
 
