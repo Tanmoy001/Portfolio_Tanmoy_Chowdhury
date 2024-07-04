@@ -4,7 +4,7 @@ import { FiFacebook } from 'react-icons/fi';
 
 import { AiOutlineInstagram } from 'react-icons/ai';
 
-import { FiTwitter } from 'react-icons/fi';
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
       <div className='footer_socials'>
         <a href='https://www.facebook.com/itzave.chowdhury/'target={'_blank'} rel="noreferrer"><FiFacebook style={{border:'none'}}/></a>
         <a href='https://www.instagram.com/ig_chowdhury/?hl=en'target={'_blank'} rel="noreferrer"><AiOutlineInstagram style={{border:'none'}}/></a>
-        <a href='https://twitter.com/TanmoyFTW07'target={'_blank'} rel="noreferrer"><FiTwitter style={{border:'none'}}/></a>
+        <a href='https://twitter.com/TanmoyFTW07'target={'_blank'} rel="noreferrer"><FaXTwitter style={{border:'none'}}/></a>
       </div>
       <div className='fotter_copyright'>
         <small>&copy;All rights are reserved.</small>

@@ -113,12 +113,14 @@ width: 42%;
 .about_card{
     /* background: lightblue; */
     border: 1px solid sandybrown;
+    background: linear-gradient(#28282B, #1c1c1e);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-    transition: var(--transition);
+    transition: background-color 2s, color 2s, border-color 2s;
 }
 .about_card:hover{
+    
     background: #6ce5b1;
     color: #111;
     border-color: #111;

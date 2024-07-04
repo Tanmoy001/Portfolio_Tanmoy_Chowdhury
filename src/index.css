@@ -71,6 +71,7 @@ a:hover{
 }
 
 .btn{
+  
   font-family: cursive;
   width: max-content;
   display: inline-block;
@@ -79,13 +80,35 @@ a:hover{
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid sandybrown;
-  transition: var(--transition);
 }
 
 .btn:hover{
+  animation-name: bounce;
+
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
   background:#5d7498;
   color: var(--color-bg);
   border-color: transparent;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 img{
   display: block;

@@ -15,11 +15,11 @@
 .contact_option{
     
     border: 1px solid sandybrown;
-    /* background: linear-gradient(35deg,lightblue,#7094ce); */
+    background: linear-gradient(35deg,#28282B,#1c1c1e);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    transition: 0.5s;
+    transition: background-color 2s, color 2s, border-color 2s;
 }
 .contact_option:hover{
     background: #c0deab;

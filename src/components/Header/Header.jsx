@@ -6,7 +6,9 @@ import Me from '../../assets/Me.png'
 import { useEffect } from 'react'
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
+  const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 750);
@@ -23,6 +25,15 @@ const Header = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+      setHasAnimated(true);
+    }, 1200); // 1.5 second delay
+
+    return () => clearTimeout(timer); 
+  }, [hasAnimated]);
   return (
     <header>
       <div id='header'>
@@ -31,10 +42,10 @@ const Header = () => {
           <div className='grid_section_mobile'>
 
             <div className='personal_sec' >
-              <h5>Hello I'm</h5>
-              <h1>Tanmoy Chowdhury</h1>
+              <h5 className={isVisible ? 'visible' : 'hidden'}>Hello I'm</h5>
+              <h1 className=''>Tanmoy Chowdhury</h1>
               <div className='text'>
-                <h5 className="text-light" >Frontend</h5>
+                <h5 className="text-light" >Developer</h5>
                 <h5 className='developer'>Developer</h5>
               </div>
               </div>
@@ -51,11 +62,11 @@ const Header = () => {
           <>
           <div className='grid_section'>
             <div className='personal_sec'>
-              <h5>Hello I'm</h5>
+            <h5 className={isVisible ? 'visible' : 'hidden'}>Hello I'm</h5>
               <h1>Tanmoy Chowdhury</h1>
               <div className='text'>
-                <h5 className="text-light" >Frontend</h5>
-                <h5 className='developer'>Developer</h5>
+                <h5 className="text-light" >Developer</h5>
+                {/* <h5 className='developer'>Developer</h5> */}
               </div>
               <CTA />
             </div>

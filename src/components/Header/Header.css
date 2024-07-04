@@ -12,6 +12,51 @@ header{
     height: 100%;
     position: relative;
 }
+
+h1{
+    text-transform: uppercase;
+    animation-duration: 2s;
+    animation-name: rotating-text-1 ;
+    /* opacity: 0; */
+}
+@keyframes rotating-text-1 {
+    0% {
+      transform: translateY(-30%);
+    }
+    50% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  .personal_sec>h5 , .btn{
+    animation-duration: 2s;
+    animation-name: rotating-text-2;
+       opacity: 1; 
+  }
+  
+    @keyframes rotating-text-2 {
+      0% {
+          opacity: 0; 
+      }
+      33%{
+          opacity: 0;
+      }
+      50% {
+          opacity: 0.5;
+        }
+      100% {
+        opacity: 1;
+      }
+    }
+
+  .personal_sec .hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .personal_sec .visible{
+    opacity: 1;
+    visibility: visible;
+  }
 .text{
     display: flex;
    justify-content: center;
@@ -27,7 +72,7 @@ header{
 }
 
 .text-light::before{
-    content:'Frontend';
+    content:'Developer';
     color: #C6E0FF;
     position: absolute;
     top: 0;
@@ -161,14 +206,26 @@ header{
     justify-content: center;
     left: 0;
     top: 14rem;
-    
 }
+svg{
+
+    animation: rotate .8s infinite;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(350deg);
+    }
+  }
+
 .header__socials::after{
-    
     content: '';
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
+    transform:  rotate(60);
 }
 .me #photo,#me{
     transform: skew(9deg);
