@@ -438,24 +438,34 @@ width: 42%;
 
 
 
-  @media screen and (max-width: 900px) and (min-height: 2000px) {
+  @media screen and (min-width: 900px) and (min-height: 2000px) {
 
     .container_about_background {
-        background-position: 32% 40%;
+        background-position: 32% 42%;
     }
     .container_about {
-        height: 22vh;
+        height: 20vh;
+    }
+
+    .container_about_second {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        
+    }
+   .container_about_background> .container_about>.about_content{
+        display: none;
     }
 }
-@media screen and (max-width: 1250px) and (min-height: 2000px) {
 
+@media screen and (min-width: 1330px) and (min-height: 2000px) {
     .container_about_background {
-        background-position: 32% 44%;
-    }
-    .container_about {
-        height: 27vh;
-    }
+background-position: 32% 54%;
+}
+.container_about {
+    height: 27vh;
 }
 
+}
 
 
