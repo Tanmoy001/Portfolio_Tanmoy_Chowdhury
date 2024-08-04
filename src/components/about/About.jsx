@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './about.css'
 import{BsAward}from 'react-icons/bs'
 import{AiOutlineProject}from 'react-icons/ai'
-import Pictures from './Pictures.jsx'
 import { useInView } from 'react-intersection-observer';
 const About = () => {
   const [animation,setAnimation] = useState();
