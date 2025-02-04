@@ -45,8 +45,8 @@ const Header = () => {
               <h5 className={isVisible ? 'visible' : 'hidden'}>Hello I'm</h5>
               <h1 className=''>Tanmoy Chowdhury</h1>
               <div className='text'>
-                <h5 className="text-light" >Developer</h5>
-                <h5 className='developer'>Developer</h5>
+                <h5 className="text-light" >TechBuilder</h5>
+                <h5 className='developer'>TechBuilder</h5>
               </div>
               </div>
               <div className='me'>
@@ -65,7 +65,7 @@ const Header = () => {
             <h5 className={isVisible ? 'visible' : 'hidden'}>Hello I'm</h5>
               <h1>Tanmoy Chowdhury</h1>
               <div className='text'>
-                <h5 className="text-light" >Developer</h5>
+                <h5 className="text-light" >TechBuilder</h5>
                 {/* <h5 className='developer'>Developer</h5> */}
               </div>
               <CTA />

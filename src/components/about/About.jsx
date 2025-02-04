@@ -10,9 +10,11 @@ const About = () => {
 
   const [scrollPosition, setscrollPosition] = useState(0);
 
+  const [serani, setSerani] = useState("first")
 
   useEffect(()=>{
     if(inView){
+      setSerani('visible')
       setAnimation("animated");
       setActive('activeanimation')
       setscrollPosition ( window.scrollY);
@@ -57,12 +59,12 @@ const About = () => {
             <div className="about_content" >
               <div className={`about_cards ${animation}`}>
                 <article className={`about_card ${active}`}>
-                  <BsAward className='about_icon'/>
+                  <BsAward className={`about_icon  ${serani}`}ref= {ref}/>
                   <h5>Experience</h5>
                   <small>1+year</small>
                 </article>
                 <article className={`about_card ${active}`}>
-                  <AiOutlineProject className='about_icon'/>
+                  <AiOutlineProject className={`about_icon ${serani}`}ref= {ref}/>
                   <h5>Project</h5>
                   <small>8+ Completed</small>
                 </article>

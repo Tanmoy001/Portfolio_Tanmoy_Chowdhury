@@ -72,7 +72,7 @@ h1{
 }
 
 .text-light::before{
-    content:'Developer';
+    content:'TechBuilder';
     color: #C6E0FF;
     position: absolute;
     top: 0;
@@ -207,18 +207,21 @@ h1{
     left: 0;
     top: 14rem;
 }
-svg{
-
-    animation: rotate .8s infinite;
+.visible {
+    animation: rotate .8s ease-in-out ;
 }
-@keyframes rotate {
-    0% {
-      transform: rotate(10deg);
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
     }
-    100% {
-      transform: rotate(350deg);
+    50%{
+        transform: rotate(180deg);
     }
-  }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 .header__socials::after{
     content: '';

@@ -39,6 +39,18 @@ transition: background-color 2s, color 2s, border-color 2s;
 .icon{
     margin-top: 6px;
 }
+.about_visible svg {
+    animation: rotate .8s infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 @media only screen and (max-width: 1024px)  {
     .experience_container{
         grid-template-columns: 1fr;
